@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reg_btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+    <TextView
+        android:id="@+id/title_Login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#32C8B2CB"
+        android:fontFamily="@font/noto_med"
+        android:gravity="center"
+        android:text="로그인하기"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inLogAct_email"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_rounded"
+        android:ems="10"
+        android:fontFamily="@font/roboto_med"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_Login" />
+
+    <android.widget.Button
+        android:id="@+id/inLoginAct_login_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto_med"
+        android:background="@drawable/rounded_deep_purple_color"
+        android:textColor="#E9E9E9"
+        android:text="로그인"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inLogAct_Pwd" />
+
+    <EditText
+        android:id="@+id/inLogAct_Pwd"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_rounded"
+        android:ems="10"
+        android:fontFamily="@font/roboto_med"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inLogAct_email" />
+
+    <ImageButton
+        android:id="@+id/inLoginActBackPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/title_Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_press" />
+
+    <TextView
+        android:id="@+id/inLogAct_incorrectIdPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#C74040"
+        android:textSize="15dp"
+        android:text="아이디와 비밀번호가 일치하지 않습니다."
+        app:layout_constraintStart_toStartOf="@+id/inLogAct_Pwd"
+        app:layout_constraintTop_toBottomOf="@+id/inLogAct_Pwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

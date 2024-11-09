@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "392725067551",
+    "project_id": "dalendar-26310",
+    "storage_bucket": "dalendar-26310.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392725067551:android:dd877bc45269d4b16aa22a",
+        "android_client_info": {
+          "package_name": "com.example.dalendar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJb8WO9WA-8XmEN8rRq4XtpjzPv4qSSLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392725067551:android:651aa6b5701d802a6aa22a",
+        "android_client_info": {
+          "package_name": "com.example.teamproject_dalendar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJb8WO9WA-8XmEN8rRq4XtpjzPv4qSSLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
