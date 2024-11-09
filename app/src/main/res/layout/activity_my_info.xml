@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,7 +9,7 @@
     tools:context=".MyInfo">
 
     <TextView
-        android:id="@+id/title_Login"
+        android:id="@+id/title_MyInfo"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#32C8B2CB"
@@ -23,16 +24,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:background="@drawable/circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_MyInfo"
+        app:layout_constraintStart_toEndOf="@+id/inLoginActBackPress"
+
+
+        />
+
+    <EditText
+        android:id="@+id/NickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="닉네임"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_med"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ivProfilePic"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfilePic"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="자기소개를 입력하세요."
+        app:layout_constraintTop_toBottomOf="@id/NickName"
+        app:layout_constraintStart_toStartOf="@id/NickName"
+        />
+
     <ImageButton
         android:id="@+id/inLoginActBackPress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/title_Login"
+        app:layout_constraintBottom_toBottomOf="@+id/title_MyInfo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_press" />
+
 
 
 
