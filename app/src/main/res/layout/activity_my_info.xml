@@ -51,6 +51,7 @@
         />
 
     <EditText
+        android:id="@+id/writeAboutMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="자기소개를 입력하세요."
@@ -68,6 +69,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_press" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintBottom_toBottomOf="@id/writeAboutMe"
+        app:layout_constraintStart_toEndOf="@id/writeAboutMe"
+
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto_med"
+        android:background="@drawable/rounded_deep_purple_color"
+        android:textColor="#E9E9E9"
+        />
 
 
 
